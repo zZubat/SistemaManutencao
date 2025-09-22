@@ -1,0 +1,51 @@
+2025-09-21 22:52:17.731162-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (title, created_at, finished_at) VALUES\000d\000a\000d\000a('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),\000d\000a(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),\000d\000a(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),\000d\000a(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),\000d\000a(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21[*]');"; SQL statement:
+INSERT INTO TODO (title, created_at, finished_at) VALUES
+
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),
+(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),
+(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),
+(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),
+(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21'); [42000-232]
+2025-09-21 22:52:26.723295-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (title, created_at, finishead_at) VALUES\000d\000a\000d\000a('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),\000d\000a(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),\000d\000a(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),\000d\000a(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),\000d\000a(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21[*]');"; SQL statement:
+INSERT INTO TODO (title, created_at, finishead_at) VALUES
+
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),
+(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),
+(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),
+(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),
+(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21'); [42000-232]
+2025-09-21 22:52:54.836723-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO TODO (title, created_at, finishead_At) VALUES\000d\000a\000d\000a('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),\000d\000a(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),\000d\000a(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),\000d\000a(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),\000d\000a(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21[*]');"; SQL statement:
+INSERT INTO TODO (title, created_at, finishead_At) VALUES
+
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),
+(''Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),
+(''Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),
+(''Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),
+(''Problema 15, TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21'); [42000-232]
+2025-09-21 22:56:49.926301-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" not found; SQL statement:
+INSERT INTO TODO (title, created_at, finishead_At) VALUES
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', DATE '2025-09-21'),
+('Problema 2', TIMESTAMP '2025-09-21 11:00:00', DATE '2025-09-21'),
+('Problema 3', TIMESTAMP '2025-09-21 14:30:00', DATE '2025-09-21'),
+('Problema 4', TIMESTAMP '2025-09-21 09:15:00', DATE '2025-09-21'),
+('Problema 15', TIMESTAMP '2025-09-21 16:45:00', DATE '2025-09-21') [42102-232]
+2025-09-21 23:00:51.379152-03:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO MANUTENCAO (title, created_at, finishead_At) VALUES\000d\000a('Problema 1', TIMESTAMP '2025-09-21 10:00:00', NULL'),\000d\000a('Problema 2', TIMESTAMP '2025-09-21 11:00:00', NULL),\000d\000a('Problema 3', TIMESTAMP '2025-09-21 14:30:00', NULL),\000d\000a('Problema 4', TIMESTAMP '2025-09-21 09:15:00', NULL),\000d\000a('Problema 15', TIMESTAMP '2025-09-21 16:45:00[*]', NULL);"; SQL statement:
+INSERT INTO MANUTENCAO (title, created_at, finishead_At) VALUES
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', NULL'),
+('Problema 2', TIMESTAMP '2025-09-21 11:00:00', NULL),
+('Problema 3', TIMESTAMP '2025-09-21 14:30:00', NULL),
+('Problema 4', TIMESTAMP '2025-09-21 09:15:00', NULL),
+('Problema 15', TIMESTAMP '2025-09-21 16:45:00', NULL); [42000-232]
+2025-09-21 23:02:07.913660-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TODO" not found; SQL statement:
+INSERT INTO TODO (title, created_at, finishead_At) VALUES
+('Problema 1', TIMESTAMP '2025-09-21 10:00:00', NULL),
+('Problema 2', TIMESTAMP '2025-09-21 11:00:00', NULL),
+('Problema 3', TIMESTAMP '2025-09-21 14:30:00', NULL),
+('Problema 4', TIMESTAMP '2025-09-21 09:15:00', NULL),
+('Problema 15', TIMESTAMP '2025-09-21 16:45:00', NULL) [42102-232]
