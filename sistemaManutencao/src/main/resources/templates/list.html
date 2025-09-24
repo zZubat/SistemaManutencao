@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" th:href="@{/manutencao}">Navbar</a>
+      <a class="navbar-brand" th:href="@{/manutencao}">Sistema de Manutenção</a>
     </div>
   </nav>
   <main class="container">
@@ -20,8 +20,9 @@
     <table class="table" th:unless="${#lists.isEmpty(manutencoes)}">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Defeito</th>
+          <th scope="col">OS</th>
+          <th scope="col">Equipamento</th>
+          <th scope="col">Descrição</th>
           <th scope="col">Criado em</th>
           <th scope="col">Finalizado em</th>
           <th scope="col">Ações</th>
@@ -30,7 +31,8 @@
       <tbody>
         <tr th:each="manutencao : ${manutencoes}">
           <th scope="row" th:text="${manutencao.id}">---</th>
-          <td th:text="${manutencao.title}">-----</td>
+          <td th:text="${manutencao.item}">-----</td>
+          <td th:text="${manutencao.description}">-----</td>
           <td th:text="${#temporals.format(manutencao.createdAt)}">-----</td>
           <td th:text="${#temporals.format(manutencao.finisheadAt)}">-----</td>
           <td>

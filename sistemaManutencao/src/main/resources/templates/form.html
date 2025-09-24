@@ -16,7 +16,7 @@
     <!-- As a link -->
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" th:href="@{/manutencao}">Cadastro</a>
+        <a class="navbar-brand" th:href="@{/manutencao}">Sistema de Manutencao</a>
       </div>
     </nav>
 
@@ -26,34 +26,34 @@
 
       <form method="post" th:object="${manutencao}">
         <div class="mb-3">
-          <label for="title" class="form-label">Titulo</label>
+          <label for="item" class="form-label">Item</label>
           <input
             type="text"
-            id="title"
+            id="item"
             class="form-control"
-            th:field="*{title}"
+            th:field="*{item}"
             required
           />
           <ul>
             <li
-              th:each="error : ${#fields.errors('title')}"
+              th:each="error : ${#fields.errors('item')}"
               th:text="${error}"
               class="text-danger"
             ></li>
           </ul>
         </div>
         <div class="mb-3">
-          <label for="deadline" class="form-label">Data de entrega</label>
+          <label for="description" class="form-label">Descrição</label>
           <input
-            type="date"
-            id="deadline"
+            type="text"
+            id="description"
             class="form-control"
-            th:field="*{deadline}"
+            th:field="*{description}"
             required
           />
           <ul>
             <li
-              th:each="error : ${#fields.errors('deadline')}"
+              th:each="error : ${#fields.errors('description')}"
               th:text="${error}"
               class="text-danger"
             ></li>

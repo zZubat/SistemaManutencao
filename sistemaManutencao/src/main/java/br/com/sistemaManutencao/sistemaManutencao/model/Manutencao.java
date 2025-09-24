@@ -37,10 +37,13 @@ public class Manutencao {
     @Size(min = 3, max= 100)
     @NotBlank
     @Column(length = 100, nullable = false)
-    private String title;
+    private String item;
+    @Size(min = 3, max= 400)
+    @NotBlank
+    @Column(length = 100, nullable = false)
+    private String description;
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
-    @NotNull
     @Column(nullable = true)
     private LocalDate finisheadAt;
 

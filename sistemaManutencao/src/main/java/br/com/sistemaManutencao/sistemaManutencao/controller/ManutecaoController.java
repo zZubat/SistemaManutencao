@@ -32,7 +32,7 @@ public class ManutecaoController {
     public ModelAndView list() {
 
         return new ModelAndView(
-                "list", Map.of("manutencoes", manutencaoRepository.findAll(Sort.by("title"))));
+                "list", Map.of("manutencoes", manutencaoRepository.findAll(Sort.by("item"))));
     }
 
     @GetMapping("/create")
