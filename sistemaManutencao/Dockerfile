@@ -14,7 +14,7 @@ RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 # Etapa 2: Imagem final para rodar a aplicação
-FROM eclipse-temurin:21-jdk
+FROM public.ecr.aws/eclipse-temurin/jdk:21
 
 WORKDIR /app
 
