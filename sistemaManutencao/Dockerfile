@@ -1,6 +1,5 @@
-# Etapa 1: Build da aplicação com Amazon Corretto
-# <--- MUDANÇA AQUI: Usando uma imagem base que não tem limite de download
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:21 AS build
+# Etapa 1: Build da aplicação
+FROM eclipse-temurin:21-jdk AS build
 
 # Define diretório de trabalho dentro do container
 WORKDIR /app
@@ -15,8 +14,7 @@ RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 # Etapa 2: Imagem final para rodar a aplicação
-# <--- MUDANÇA AQUI: Usando a mesma imagem base, garantindo consistência e corrigindo o erro "not found"
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:21
+FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
